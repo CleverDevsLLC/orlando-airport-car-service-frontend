@@ -8,7 +8,7 @@ export default function ContactSection() {
       title: "Get Quote",
       description: "Fill in the form.",
       action: "Go to form",
-      href: "/quote",
+      href: "#",
     },
     {
       icon: Bell,
