@@ -4,11 +4,19 @@ import FaqSection from "@/Components/FAQ/FaqUpdated";
 import ContactSection from "@/Components/Contact/Contact";
 
 export const metadata: Metadata = {
-  title: "FAQ",
+  title: "Orlando Airport Car Service FAQ | Transportation Questions Answered",
   description:
-    "Find answers to common questions about Limo Services. Learn about rates, policies, and more.",
-  keywords: "FAQs, Limo Service, transportation, rates, policies, reservations",
-  authors: [{ name: "Limo Service Company" }],
+    "Find answers to common questions about Orlando Airport Car Service. Learn about MCO transportation rates, policies, booking process, and more.",
+  keywords:
+    "Orlando Airport Car Service FAQ, MCO transportation questions, Orlando car service policies, airport transfer FAQ, Orlando limo service questions",
+  authors: [{ name: "Orlando Airport Car Service" }],
+  openGraph: {
+    title:
+      "Orlando Airport Car Service FAQ | Transportation Questions Answered",
+    description:
+      "Find answers to common questions about Orlando Airport Car Service. Learn about MCO transportation rates, policies, booking process, and more.",
+    type: "website",
+  },
 };
 function FAQ() {
   return (

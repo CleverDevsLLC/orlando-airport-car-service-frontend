@@ -10,7 +10,8 @@ export default function Footer() {
             <div>
               <h3 className="mb-4 text-2xl font-bold">Limo Service</h3>
               <p className="mb-4">
-              Enjoy unmatched comfort and elegance with our top-tier limo services.
+                Enjoy unmatched comfort and elegance with our top-tier limo
+                services.
               </p>
               <div className="flex space-x-4">
                 <a
@@ -89,7 +90,7 @@ export default function Footer() {
             <div>
               <h4 className="mb-4 text-xl font-semibold">Contact Us</h4>
               <p className="mb-2">
-                Phone: <a href="tel:4044686938">(404) 459-5749</a>
+                Phone: <a href="tel:407344-5566">(407) 344-5566</a>
               </p>
               <img src="/images/payment.jpg" width={150} />
             </div>
@@ -105,7 +106,7 @@ export default function Footer() {
       <br />
       <center>
         <p>
-        Website design and marketing powered By:{" "}
+          Website design and marketing powered By:{" "}
           <Link href={"https://www.limoflow.com/"} className="font-semibold">
             Limo Flow
           </Link>

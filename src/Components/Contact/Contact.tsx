@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { MessageSquare, Bell, Phone } from "lucide-react"
+import Link from "next/link";
+import { MessageSquare, Bell, Phone } from "lucide-react";
 
 export default function ContactSection() {
   const contactMethods = [
@@ -14,45 +14,60 @@ export default function ContactSection() {
       icon: Bell,
       title: "Chat to support",
       description: "We're here to help.",
-      action: "support@limoflow.com",
-      href: "mailto:support@limoflow.com",
+      action: "book@orlandosedanexpress.com",
+      href: "mailto:book@orlandosedanexpress.com",
     },
     {
       icon: Phone,
       title: "Call us",
       description: "Mon-Fri from 8am to 5pm.",
-      action: "+1 (555) 000-0000",
-      href: "tel:+15550000000",
+      action: "+1 (407) 344-5566",
+      href: "tel:+14073445566",
     },
-  ]
+  ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="bg-white py-16">
       <div className="container mx-auto px-4">
         <div className="mb-16">
-          <p className="text-blue-600 font-medium mb-4">Contact us</p>
-          <h2 className="text-4xl font-bold mb-6">We&apos;d love to hear from you</h2>
-          <p className="text-gray-600 text-lg">Our friendly team is always here to chat.</p>
+          <p className="mb-4 font-medium text-blue-600">Contact us</p>
+          <h2 className="mb-6 text-4xl font-bold">
+            We&apos;d love to hear from you
+          </h2>
+          <p className="text-lg text-gray-600">
+            Our friendly team is always here to chat.
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-24 max-w-7xl mx-auto">
+        <div className="mx-auto grid max-w-7xl gap-24 md:grid-cols-3">
           {contactMethods.map((method, index) => (
-            <div key={index} className="text-left bg-gray-100 p-10 rounded-lg">
-              <div className="w-12 h-12 bg-blue-700 rounded-xl flex items-center justify-center mb-8">
-                <method.icon className="w-6 h-6 text-white" />
+            <div key={index} className="rounded-lg bg-gray-100 p-10 text-left">
+              <div className="mb-8 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-700">
+                <method.icon className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3">{method.title}</h3>
-              <p className="text-gray-600 mb-4 leading-relaxed">{method.description}</p>
+              <h3 className="mb-3 text-xl font-bold">{method.title}</h3>
+              <p className="mb-4 leading-relaxed text-gray-600">
+                {method.description}
+              </p>
               {method.href.startsWith("tel:") ? (
-                <a href={method.href} className="text-blue-600 font-medium hover:text-blue-700">
+                <a
+                  href={method.href}
+                  className="font-medium text-blue-600 hover:text-blue-700"
+                >
                   {method.action}
                 </a>
               ) : method.href.startsWith("mailto:") ? (
-                <a href={method.href} className="text-blue-600 font-medium hover:text-blue-700">
+                <a
+                  href={method.href}
+                  className="font-medium text-blue-600 hover:text-blue-700"
+                >
                   {method.action}
                 </a>
               ) : (
-                <Link href={method.href} className="text-blue-600 font-medium hover:text-blue-700">
+                <Link
+                  href={method.href}
+                  className="font-medium text-blue-600 hover:text-blue-700"
+                >
                   {method.action}
                 </Link>
               )}
@@ -61,5 +76,5 @@ export default function ContactSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

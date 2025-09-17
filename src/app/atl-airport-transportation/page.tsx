@@ -3,10 +3,18 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Airport Transportation Ga | Car Service",
+  title: "Orlando Airport Transportation | MCO Car Service & Transfers",
+  description:
+    "Professional Orlando Airport Transportation to/from MCO. Reliable, comfortable, and affordable car service with experienced chauffeurs and luxury vehicles.",
   keywords:
-    "Limo Service, Los Angeles Car Service, transportation, rates, policies, reservations",
-  authors: [{ name: "Limo Service Company" }],
+    "Orlando Airport Transportation, MCO car service, Orlando airport transfers, MCO transportation, airport shuttle Orlando, Orlando airport car service",
+  authors: [{ name: "Orlando Airport Car Service" }],
+  openGraph: {
+    title: "Orlando Airport Transportation | MCO Car Service & Transfers",
+    description:
+      "Professional Orlando Airport Transportation to/from MCO. Reliable, comfortable, and affordable car service with experienced chauffeurs and luxury vehicles.",
+    type: "website",
+  },
 };
 
 export default function page() {

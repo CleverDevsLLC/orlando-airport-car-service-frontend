@@ -1,17 +1,21 @@
-import RatesPage from '@/Components/Rates/Rates'
-import { Metadata } from 'next';
+import RatesPage from "@/Components/Rates/Rates";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "LAX Car Service to Palm Springs California, Affordable Limo Service to LAX",
+  title: "Orlando Airport Car Service Rates | Affordable MCO Transportation",
+  description:
+    "Competitive rates for Orlando Airport Car Service. Transparent pricing for MCO transportation, no hidden fees. Get instant quotes for luxury car service in Orlando.",
   keywords:
-    "Affordable Town Car, Los Angeles Car Service, transportation, rates, policies, reservations, LAX Car Service to Palm Springs California, Affordable Limo Service to LAX",
-  authors: [{ name: "Affordable Town Car Company" }],
+    "Orlando Airport Car Service rates, MCO transportation pricing, Orlando car service cost, airport transfer rates Orlando, affordable Orlando limo service, MCO car service prices",
+  authors: [{ name: "Orlando Airport Car Service" }],
+  openGraph: {
+    title: "Orlando Airport Car Service Rates | Affordable MCO Transportation",
+    description:
+      "Competitive rates for Orlando Airport Car Service. Transparent pricing for MCO transportation, no hidden fees. Get instant quotes for luxury car service in Orlando.",
+    type: "website",
+  },
 };
 
-
 export default function ReservationPage() {
-  return (
-    <RatesPage/>
-  )
+  return <RatesPage />;
 }
-

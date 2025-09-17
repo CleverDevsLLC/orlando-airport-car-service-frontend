@@ -8,21 +8,30 @@ import WhyChooseUsSection from "@/Components/WhyChooseLimo/WhyChooseUsUpdated";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Limo Service, Airport Transportation, Affordable",
-  keywords: "Affordable transportation, rates, policies, reservations",
-  authors: [{ name: "Limo Service" }],
+  title: "Orlando Airport Car Service | MCO Transportation & Limo Service",
+  description:
+    "Premium Orlando Airport Car Service providing reliable transportation to/from MCO. Professional chauffeurs, luxury vehicles, and competitive rates for Orlando airport transfers.",
+  keywords:
+    "Orlando Airport Car Service, MCO car service, Orlando airport transportation, MCO limo service, airport shuttle Orlando, luxury transportation Orlando, Orlando airport transfer",
+  authors: [{ name: "Orlando Airport Car Service" }],
+  openGraph: {
+    title: "Orlando Airport Car Service | MCO Transportation & Limo Service",
+    description:
+      "Premium Orlando Airport Car Service providing reliable transportation to/from MCO. Professional chauffeurs, luxury vehicles, and competitive rates for Orlando airport transfers.",
+    type: "website",
+  },
 };
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <HeroSection/>
-      <TestimonialsSection/>
-      <ServicesSection/>
-      <WhyChooseUsSection/>
-      <PlacesWeServeSection/>
-      <ContactSection/>
+      <HeroSection />
+      <TestimonialsSection />
+      <ServicesSection />
+      <WhyChooseUsSection />
+      <PlacesWeServeSection />
+      <ContactSection />
     </>
   );
 }

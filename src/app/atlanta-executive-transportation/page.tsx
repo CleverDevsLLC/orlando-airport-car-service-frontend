@@ -3,10 +3,18 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Car Service | Executive Car Service",
+  title: "Orlando Executive Car Service | Corporate Transportation",
+  description:
+    "Premium Orlando Executive Car Service for business professionals. Reliable corporate transportation with luxury vehicles and professional chauffeurs in Orlando, Florida.",
   keywords:
-    "Limo Service, Los Angeles Car Service, transportation, rates, policies, reservations",
-  authors: [{ name: "Limo Service Company" }],
+    "Orlando Executive Car Service, corporate transportation Orlando, business car service Orlando, executive transportation Orlando, professional chauffeur Orlando",
+  authors: [{ name: "Orlando Airport Car Service" }],
+  openGraph: {
+    title: "Orlando Executive Car Service | Corporate Transportation",
+    description:
+      "Premium Orlando Executive Car Service for business professionals. Reliable corporate transportation with luxury vehicles and professional chauffeurs in Orlando, Florida.",
+    type: "website",
+  },
 };
 
 export default function page() {

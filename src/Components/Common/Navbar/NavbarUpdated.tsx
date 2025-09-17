@@ -1,20 +1,20 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import Link from "next/link"
-import { Phone, Menu, X } from "lucide-react"
-import { useState } from "react"
+import Image from "next/image";
+import Link from "next/link";
+import { Phone, Menu, X } from "lucide-react";
+import { useState } from "react";
 
 export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   const closeMenu = () => {
-    setIsMenuOpen(false)
-  }
+    setIsMenuOpen(false);
+  };
 
   return (
     <header className="bg-white shadow-sm md:sticky md:top-0 md:z-50">
@@ -23,38 +23,59 @@ export default function Navbar() {
           {/* Logo and Desktop Navigation */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center" onClick={closeMenu}>
-              <Image src="/images/logo.png" alt="Logo" width={150} height={40} className="h-20 w-auto navbar-logo"/>
+              <Image
+                src="/images/logo.png"
+                alt="Logo"
+                width={150}
+                height={40}
+                className="navbar-logo h-20 w-auto"
+              />
             </Link>
 
             {/* Desktop Navigation - Now left-aligned with logo */}
-            <nav className="hidden md:flex space-x-6">
-              <Link href="/" className="text-sm font-medium text-gray-700 hover:text-blue-700">
+            <nav className="hidden space-x-6 md:flex">
+              <Link
+                href="/"
+                className="text-sm font-medium text-gray-700 hover:text-blue-700"
+              >
                 Home
               </Link>
-              <Link href="/about" className="text-sm font-medium text-gray-700 hover:text-blue-700">
+              <Link
+                href="/about"
+                className="text-sm font-medium text-gray-700 hover:text-blue-700"
+              >
                 About Us
               </Link>
-              <Link href="/fleet" className="text-sm font-medium text-gray-700 hover:text-blue-700">
+              <Link
+                href="/fleet"
+                className="text-sm font-medium text-gray-700 hover:text-blue-700"
+              >
                 Our Fleet
               </Link>
-              <Link href="/services" className="text-sm font-medium text-gray-700 hover:text-blue-700">
+              <Link
+                href="/services"
+                className="text-sm font-medium text-gray-700 hover:text-blue-700"
+              >
                 Services
               </Link>
-              <Link href="/faq" className="text-sm font-medium text-gray-700 hover:text-blue-700">
+              <Link
+                href="/faq"
+                className="text-sm font-medium text-gray-700 hover:text-blue-700"
+              >
                 FAQ
               </Link>
             </nav>
           </div>
 
           {/* Desktop Contact & CTA */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden items-center space-x-4 md:flex">
             <div className="flex items-center">
-              <Phone className="h-4 w-4 text-gray-500 mr-2" />
-              <span className="text-sm text-gray-700">(123) 456 7890</span>
+              <Phone className="mr-2 h-4 w-4 text-gray-500" />
+              <span className="text-sm text-gray-700">(407) 344-5566</span>
             </div>
             <Link
               href="/reservation"
-              className="bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded hover:bg-blue-800"
+              className="rounded bg-blue-700 px-4 py-2 text-sm font-medium text-white hover:bg-blue-800"
             >
               Get Quote Now
             </Link>
@@ -64,63 +85,69 @@ export default function Navbar() {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="p-2 rounded-md text-gray-700 hover:text-blue-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="rounded-md p-2 text-gray-700 hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
               aria-label="Toggle menu"
             >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>
 
         {/* Mobile Navigation Menu */}
         <div
-          className={`md:hidden transition-all duration-300 ease-in-out ${
-            isMenuOpen ? "max-h-96 opacity-100 visible" : "max-h-0 opacity-0 invisible overflow-hidden"
+          className={`transition-all duration-300 ease-in-out md:hidden ${
+            isMenuOpen
+              ? "visible max-h-96 opacity-100"
+              : "invisible max-h-0 overflow-hidden opacity-0"
           }`}
         >
-          <nav className="pt-4 pb-2 border-t border-gray-200 mt-3">
+          <nav className="mt-3 border-t border-gray-200 pb-2 pt-4">
             <div className="flex flex-col space-y-3">
               <Link
                 href="/"
-                className="text-base font-medium text-gray-700 hover:text-blue-700 py-2 px-2 rounded-md hover:bg-gray-50"
+                className="rounded-md px-2 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-700"
                 onClick={closeMenu}
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className="text-base font-medium text-gray-700 hover:text-blue-700 py-2 px-2 rounded-md hover:bg-gray-50"
+                className="rounded-md px-2 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-700"
                 onClick={closeMenu}
               >
                 About Us
               </Link>
               <Link
                 href="/fleet"
-                className="text-base font-medium text-gray-700 hover:text-blue-700 py-2 px-2 rounded-md hover:bg-gray-50"
+                className="rounded-md px-2 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-700"
                 onClick={closeMenu}
               >
                 Our Fleet
               </Link>
               <Link
                 href="/services"
-                className="text-base font-medium text-gray-700 hover:text-blue-700 py-2 px-2 rounded-md hover:bg-gray-50"
+                className="rounded-md px-2 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-700"
                 onClick={closeMenu}
               >
                 Services
               </Link>
               <Link
                 href="/faq"
-                className="text-base font-medium text-gray-700 hover:text-blue-700 py-2 px-2 rounded-md hover:bg-gray-50"
+                className="rounded-md px-2 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-700"
                 onClick={closeMenu}
               >
                 FAQ
               </Link>
 
               {/* Quote Button - Now inside mobile menu */}
-              <div className="pt-3 pb-2">
+              <div className="pb-2 pt-3">
                 <Link
                   href="/reservation"
-                  className="bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded hover:bg-blue-800 inline-block"
+                  className="inline-block rounded bg-blue-700 px-4 py-2 text-sm font-medium text-white hover:bg-blue-800"
                   onClick={closeMenu}
                 >
                   Get Quote Now
@@ -128,11 +155,14 @@ export default function Navbar() {
               </div>
 
               {/* Mobile Contact Info */}
-              <div className="pt-3 mt-3 border-t border-gray-200">
-                <div className="flex items-center py-2 px-2">
-                  <Phone className="h-4 w-4 text-gray-500 mr-3" />
-                  <a href="tel:+1234567890" className="text-base text-gray-700 hover:text-blue-700">
-                    (123) 456 7890
+              <div className="mt-3 border-t border-gray-200 pt-3">
+                <div className="flex items-center px-2 py-2">
+                  <Phone className="mr-3 h-4 w-4 text-gray-500" />
+                  <a
+                    href="tel:+4073445566"
+                    className="text-base text-gray-700 hover:text-blue-700"
+                  >
+                    (407) 344-5566
                   </a>
                 </div>
               </div>
@@ -141,5 +171,5 @@ export default function Navbar() {
         </div>
       </div>
     </header>
-  )
+  );
 }

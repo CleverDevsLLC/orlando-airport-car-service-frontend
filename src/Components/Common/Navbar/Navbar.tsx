@@ -92,7 +92,7 @@ export default function Navbar() {
                     href="tel:4044686938"
                     className="flex cursor-pointer items-center justify-center gap-2"
                   >
-                    <PhoneCall /> (404) 459-5749
+                    <PhoneCall /> (407) 344-5566
                   </a>
                 </>
               ) : token && status === "admin" ? (
@@ -240,7 +240,7 @@ export default function Navbar() {
                     href="tel:4044686938"
                     className="flex cursor-pointer items-center justify-center gap-2 font-semibold"
                   >
-                    <PhoneCall /> (404) 459-5749
+                    <PhoneCall /> (407) 344-5566
                   </a>
                 </>
               ) : token && status === "admin" ? (

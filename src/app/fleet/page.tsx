@@ -4,16 +4,24 @@ import FleetSection from "@/Components/Fleet/FleetUpdated";
 import Navbar from "@/Components/Common/Navbar/NavbarUpdated";
 
 export const metadata: Metadata = {
-  title: "Check out our Fleet of Vehicles",
+  title: "Orlando Airport Car Service Fleet | Luxury Vehicle Options",
+  description:
+    "Explore our premium fleet of luxury vehicles for Orlando Airport Car Service. Sedans, SUVs, limousines, and more for comfortable MCO transportation.",
   keywords:
-    "Limo Car Company",
-  authors: [{ name: "Limo Car Company Company" }],
+    "Orlando Airport Car Service fleet, luxury vehicles Orlando, MCO transportation vehicles, Orlando limo fleet, airport car service vehicles, luxury sedan Orlando",
+  authors: [{ name: "Orlando Airport Car Service" }],
+  openGraph: {
+    title: "Orlando Airport Car Service Fleet | Luxury Vehicle Options",
+    description:
+      "Explore our premium fleet of luxury vehicles for Orlando Airport Car Service. Sedans, SUVs, limousines, and more for comfortable MCO transportation.",
+    type: "website",
+  },
 };
 
 export default function Fleet() {
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <FleetSection />
     </>
   );

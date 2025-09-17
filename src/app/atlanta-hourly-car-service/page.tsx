@@ -3,10 +3,18 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Car Rentals| Car Rentals Georgia",
+  title: "Orlando Hourly Car Service | Flexible Transportation Rentals",
+  description:
+    "Orlando Hourly Car Service offering flexible transportation solutions. Perfect for business meetings, city tours, and extended travel needs in Orlando, Florida.",
   keywords:
-    "Limo Service, Los Angeles Car Service, transportation, rates, policies, reservations",
-  authors: [{ name: "Limo Service Company" }],
+    "Orlando Hourly Car Service, hourly transportation Orlando, car rental Orlando, flexible car service Orlando, Orlando chauffeur service, hourly limo Orlando",
+  authors: [{ name: "Orlando Airport Car Service" }],
+  openGraph: {
+    title: "Orlando Hourly Car Service | Flexible Transportation Rentals",
+    description:
+      "Orlando Hourly Car Service offering flexible transportation solutions. Perfect for business meetings, city tours, and extended travel needs in Orlando, Florida.",
+    type: "website",
+  },
 };
 export default function page() {
   return (

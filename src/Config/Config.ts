@@ -1,7 +1,7 @@
 export const API = {
-  uri: "https://limo-main-backend.onrender.com/api",
+  uri: "https://orlando-airport-car-service-inc.onrender.com/api",
   // uri: "http://localhost:8080/api",
-  companyId: "67468d86820bc06903f23624",
+  companyId: "68c71052b7a0b4761148435c",
   websiteURL: "",
 };
 

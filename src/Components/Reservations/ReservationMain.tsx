@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Navbar from "@/Components/Common/Navbar/NavbarUpdated";
-import ReservationForm from "@/Components/Reservations/Reservations";
+// import ReservationForm from "@/Components/Reservations/Reservations";
 import {
   Star,
   Clock,
@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { getCompanyDetail } from "@/Services/GET";
 import { API } from "@/Config/Config";
+import ReservationFormComponent from "../ReservationForm/ReservationFormComponent";
 
 export default function ReservationMain() {
   const [discount, setDiscount] = useState(0);
@@ -39,14 +40,15 @@ export default function ReservationMain() {
             Get {discount}% Off Online Quotes
           </h1>
           <p className="mx-auto hidden max-w-2xl text-lg text-gray-600 md:block">
-            Call <a href="tel:4044686938">(404) 459-5749</a> now, or Enjoy a 10%
+            Call <a href="tel:4073445566">(407) 344-5566</a> now, or Enjoy a 10%
             discount when you request your quote below!
           </p>
         </section>
 
         <div className="flex flex-col items-center gap-8 md:grid md:grid-cols-2 md:items-start">
           <div className="mb-8 w-full rounded-lg bg-white shadow-lg sm:p-0 md:mb-0 lg:p-6">
-            <ReservationForm />
+            {/* <ReservationForm /> */}
+            <ReservationFormComponent />
           </div>
           <div className="w-full rounded-lg bg-white p-6 shadow-lg">
             <h2 className="mb-6 text-2xl font-semibold text-gray-800">
