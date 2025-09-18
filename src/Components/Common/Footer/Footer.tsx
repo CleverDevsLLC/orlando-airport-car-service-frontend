@@ -90,7 +90,7 @@ export default function Footer() {
             <div>
               <h4 className="mb-4 text-xl font-semibold">Contact Us</h4>
               <p className="mb-2">
-                Phone: <a href="tel:407344-5566">(407) 344-5566</a>
+                Phone: <a href="tel:+14073445566">(407) 344-5566</a>
               </p>
               <img src="/images/payment.jpg" width={150} />
             </div>

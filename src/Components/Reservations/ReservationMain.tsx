@@ -40,8 +40,8 @@ export default function ReservationMain() {
             Get {discount}% Off Online Quotes
           </h1>
           <p className="mx-auto hidden max-w-2xl text-lg text-gray-600 md:block">
-            Call <a href="tel:4073445566">(407) 344-5566</a> now, or Enjoy a 10%
-            discount when you request your quote below!
+            Call <a href="tel:+14073445566">(407) 344-5566</a> now, or Enjoy a
+            10% discount when you request your quote below!
           </p>
         </section>
 

@@ -71,7 +71,12 @@ export default function Navbar() {
           <div className="hidden items-center space-x-4 md:flex">
             <div className="flex items-center">
               <Phone className="mr-2 h-4 w-4 text-gray-500" />
-              <span className="text-sm text-gray-700">(407) 344-5566</span>
+              <a
+                href="tel:+14073445566"
+                className="text-sm text-gray-700 hover:text-blue-700"
+              >
+                (407) 344-5566
+              </a>
             </div>
             <Link
               href="/reservation"
@@ -159,7 +164,7 @@ export default function Navbar() {
                 <div className="flex items-center px-2 py-2">
                   <Phone className="mr-3 h-4 w-4 text-gray-500" />
                   <a
-                    href="tel:+4073445566"
+                    href="tel:+14073445566"
                     className="text-base text-gray-700 hover:text-blue-700"
                   >
                     (407) 344-5566

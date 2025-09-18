@@ -89,7 +89,7 @@ export default function Navbar() {
                   </Link>
 
                   <a
-                    href="tel:4044686938"
+                    href="tel:+14044686938"
                     className="flex cursor-pointer items-center justify-center gap-2"
                   >
                     <PhoneCall /> (407) 344-5566
