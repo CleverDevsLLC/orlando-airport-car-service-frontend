@@ -1,3 +1,4 @@
+// eslint-disable-next-line react/no-unescaped-entities
 import { Clock, Car, DollarSign } from "lucide-react";
 
 export default function WhyChooseUsSection() {

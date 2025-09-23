@@ -1,3 +1,4 @@
+// eslint-disable-next-line react/no-unescaped-entities
 "use client";
 import Link from "next/link";
 import { useEffect } from "react";
