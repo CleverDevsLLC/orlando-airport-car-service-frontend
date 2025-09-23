@@ -55,6 +55,7 @@ export default function HeroSection() {
               Your Gateway to <span className="text-blue-700">Effortless</span>{" "}
               Luxury
             </h1>
+            // eslint-disable-next-line react/no-unescaped-entities
             <p className="main-para mb-6 text-gray-600">
               As Orlando's premier luxury transportation company, we specialize
               in providing seamless airport car service, executive
