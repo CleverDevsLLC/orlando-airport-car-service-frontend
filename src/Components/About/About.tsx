@@ -228,7 +228,7 @@ const AboutUs: React.FC = () => {
                 <div>
                   <p className="font-medium text-gray-900">Email</p>
                   <a
-                    href="mailto:info@limoservice.com"
+                    href="mailto:book@orlandosedanexpress.com"
                     className="text-blue-600 hover:text-blue-700"
                   >
                     book@orlandosedanexpress.com
