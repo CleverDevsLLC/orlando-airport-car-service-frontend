@@ -51,8 +51,8 @@ export default function HeroSection() {
         <div className="flex flex-col items-center md:flex-row">
           <div className="mb-8 pr-4 md:mb-0 md:w-1/2 lg:w-3/5">
             <h1 className="main-heading mb-4 text-[22px] font-bold sm:text-4xl">
-              Your Gateway to <span className="text-blue-700">Effortless</span>{" "}
-              Luxury
+              Welcome to{" "}
+              <span className="text-blue-700">Orlando Airport Car Service</span>{" "}
             </h1>
             <p className="main-para mb-6 text-gray-600">
               As Orlando&apos;s premier luxury transportation company, we
