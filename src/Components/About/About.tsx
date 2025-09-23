@@ -207,12 +207,20 @@ const AboutUs: React.FC = () => {
                 <Phone className="mr-3 mt-0.5 h-5 w-5 text-gray-500" />
                 <div>
                   <p className="font-medium text-gray-900">Phone</p>
-                  <a
-                    href="tel:+14044595749"
-                    className="text-blue-600 hover:text-blue-700"
-                  >
-                    (407) 344-5566
-                  </a>
+                  <div className="flex flex-col">
+                    <a
+                      href="tel:+14073445566"
+                      className="text-blue-600 hover:text-blue-700"
+                    >
+                      (407) 344-5566
+                    </a>
+                    <a
+                      href="tel:+18886288883"
+                      className="text-blue-600 hover:text-blue-700"
+                    >
+                      (888) 628-8883
+                    </a>
+                  </div>
                 </div>
               </div>
               <div className="flex items-start">
