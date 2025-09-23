@@ -200,7 +200,7 @@ const AboutUs: React.FC = () => {
                 <MapPin className="mr-3 mt-0.5 h-5 w-5 text-gray-500" />
                 <div>
                   <p className="font-medium text-gray-900">Our Location</p>
-                  <p className="text-gray-600">3131 Piedmont Rd NE, GA 30305</p>
+                  <p className="text-gray-600">1718 Hughey, Orlando, FL</p>
                 </div>
               </div>
               <div className="flex items-start">
