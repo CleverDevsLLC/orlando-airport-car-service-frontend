@@ -57,8 +57,8 @@ export default function HeroSection() {
             </h1>
             // eslint-disable-next-line react/no-unescaped-entities
             <p className="main-para mb-6 text-gray-600">
-              As Orlando's premier luxury transportation company, we specialize
-              in providing seamless airport car service, executive
+              As Orlando&apos;s premier luxury transportation company, we
+              specialize in providing seamless airport car service, executive
               transportation, and chauffeur-driven experiences for discerning
               clients.
             </p>
@@ -73,6 +73,7 @@ export default function HeroSection() {
           </div>
           <div className="form-container">
             <div className="rounded-lg bg-white shadow-lg sm:p-0">
+              {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
               {/* <iframe id="formFrame" src="http://localhost:3000/"></iframe> */}
               <iframe
                 id="formFrame"
