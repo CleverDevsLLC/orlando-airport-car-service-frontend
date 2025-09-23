@@ -6,14 +6,14 @@ export default function ContactSection() {
     {
       icon: MessageSquare,
       title: "Get Quote",
-      description: "Fill in the form.",
+      description: "Get free estimates for your Orlando airport transportation needs",
       action: "Go to form",
       href: "#",
     },
     {
       icon: Bell,
       title: "Chat to support",
-      description: "We're here to help.",
+      description: "Connect with our transportation specialists anytime",
       action: "book@orlandosedanexpress.com",
       href: "mailto:book@orlandosedanexpress.com",
     },

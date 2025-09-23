@@ -7,21 +7,21 @@ export default function TestimonialsSection() {
   const testimonials = [
     {
       quote:
-        "Absolutely outstanding service! The chauffeur was punctual, professional, and the vehicle was immaculate. I've used Limos of Your Service for multiple business trips and they consistently exceed my expectations. Their attention to detail makes all the difference when I need to focus on preparing for meetings.",
+        "AOutstanding professional service! The chauffeur arrived promptly for my Orlando airport pickup and the vehicle was immaculate. I've used Elite Times for my frequent business trips and they consistently exceed my expectations. Their attention to detail is unmatched – definitely my go-to for executive transportation.",
       author: "Michael Thompson",
       role: "Business Executive",
       image: "/images/user-1.webp",
     },
     {
       quote:
-        "Our wedding day transportation was flawless! The stretch limousine was gorgeous and our chauffeur went above and beyond to make our special day perfect. He even laid out a red carpet for us! The entire experience from booking to the actual day was stress-free and elegant. Highly recommend for any wedding!",
+        "I've worked with transportation services Florida-wide, but none compare to their luxury sedan service. From airport transfers to special events, their chauffeurs arrive clean and dressed to impress, going the extra mile to ensure that each of my clients receives white-glove treatment. I wholeheartedly recommend it for weddings!",
       author: "Jennifer Williams",
       role: "Bride",
       image: "/images/user-2.webp",
     },
     {
       quote:
-        "We booked a private tour of Los Angeles and it was the highlight of our family vacation. Our chauffeur was knowledgeable about the city and customized the tour to our interests. The luxury SUV was comfortable for our family of five and the kids loved feeling like VIPs. Will definitely use again for our next trip!",
+        "As the go-to ground transportation of our Orlando office, I can confidently say their limo service operates like a well-oiled machine. Whether our executives need luxury car service from the airport or corporate transportation for meetings, they deliver exceptional service from start to finish.",
       author: "David Rodriguez",
       role: "Family Vacation",
       image: "/images/user-3.webp",

@@ -6,24 +6,24 @@ export default function PlacesWeServeSection() {
       title: "Cities & Towns",
       icon: <Building2 className="w-6 h-6 text-gray-700" />,
       locations: [
-        "East Northport, NY",
-        "Northport, NY",
-        "Port Jefferson, NY",
-        "Babylon, NY",
-        "Holbrook, NY",
-        "Islip, NY",
-        "New York City",
+        "Orlando, FL",
+        "Lake Buena Vista, FL",
+        "Dr. Phillips, FL",
+        "Winter Park, FL",
+        "Kissimmee, FL",
+        "Celebration, FL",
+        "Bay Hill, FL",
       ],
     },
     {
       title: "Counties & Regions",
       icon: <BookOpen className="w-6 h-6 text-gray-700" />,
-      locations: ["Westchester County, NY", "New Jersey", "Connecticut", "New York State"],
+      locations: ["Orange County", "Osceola County", "Seminole County", "Lake County"],
     },
     {
       title: "General Region",
       icon: <Globe className="w-6 h-6 text-gray-700" />,
-      locations: ["Tri-State Area (NY, NJ, CT)"],
+      locations: ["Central Florida", "Greater Orlando Area", "The Villages", "Disney World Resort Area"],
     },
   ]
 

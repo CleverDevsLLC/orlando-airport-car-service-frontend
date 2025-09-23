@@ -1,49 +1,56 @@
-import { Clock, Car, DollarSign } from "lucide-react"
+import { Clock, Car, DollarSign } from "lucide-react";
 
 export default function WhyChooseUsSection() {
   const features = [
     {
       icon: Clock,
       title: "On-Time Guarantee",
-      description: "Always on time, every time. We value your schedule.",
+      description:
+        "Punctual Service, Every Time We understand time is gold, so we ensure your chauffeur arrives on schedule.",
     },
     {
       icon: Car,
       title: "Our Fleet",
-      description: "Top-of-the-line vehicles for a premium experience.",
+      description:
+        "Top-of-the-line vehicles for a prestigious transportation experience.",
     },
     {
       icon: DollarSign,
       title: "Reasonable Rates",
-      description: "Best value for your money!",
+      description:
+        "Competitive rates for your luxury ground transportation needs.",
     },
-  ]
+  ];
 
   return (
-    <section className="py-16 bg-[#EBF0FF]">
+    <section className="bg-[#EBF0FF] py-16">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <p className="text-blue-600 font-medium mb-4">Our values</p>
-          <h2 className="text-4xl font-bold mb-8">Why Choose Us?</h2>
-          <p className="text-gray-600 max-w-4xl mx-auto text-lg leading-relaxed">
-            We go the extra mile to deliver a premium travel experience. With a focus on safety, reliability, and
-            customer satisfaction, we ensure every ride is smooth and stress-free. Enjoy professional drivers, timely
-            pickups, and personalized service that puts your comfort first—because you deserve the best.
+        <div className="mb-16 text-center">
+          <p className="mb-4 font-medium text-blue-600">Our values</p>
+          <h2 className="mb-8 text-4xl font-bold">Why Choose Us?</h2>
+          <p className="mx-auto max-w-4xl text-lg leading-relaxed text-gray-600">
+            We go that extra mile to deliver a premium travel experience. With a
+            focus on safety, reliability, and customer satisfaction, we deliver
+            world-class service with complete trust. From your preferred
+            departure times, family gatherings, and corporate meetings that make
+            your business formalities quick and efficient.{" "}
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+        <div className="mx-auto grid max-w-5xl gap-12 md:grid-cols-3">
           {features.map((feature, index) => (
             <div key={index} className="text-center">
-              <div className="w-16 h-16 border-2 border-gray-300 rounded-xl flex items-center justify-center mx-auto mb-6">
-                <feature.icon className="w-8 h-8 text-gray-700 stroke-2" />
+              <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-xl border-2 border-gray-300">
+                <feature.icon className="h-8 w-8 stroke-2 text-gray-700" />
               </div>
-              <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+              <h3 className="mb-4 text-xl font-bold">{feature.title}</h3>
+              <p className="leading-relaxed text-gray-600">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
