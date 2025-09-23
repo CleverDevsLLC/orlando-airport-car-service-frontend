@@ -1,4 +1,3 @@
-// eslint-disable-next-line react/no-unescaped-entities
 "use client";
 import Link from "next/link";
 import { useEffect } from "react";
@@ -55,7 +54,6 @@ export default function HeroSection() {
               Your Gateway to <span className="text-blue-700">Effortless</span>{" "}
               Luxury
             </h1>
-            // eslint-disable-next-line react/no-unescaped-entities
             <p className="main-para mb-6 text-gray-600">
               As Orlando&apos;s premier luxury transportation company, we
               specialize in providing seamless airport car service, executive
