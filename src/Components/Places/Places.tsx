@@ -1,10 +1,10 @@
-import { Building2, BookOpen, Globe } from "lucide-react"
+import { Building2, BookOpen, Globe } from "lucide-react";
 
 export default function PlacesWeServeSection() {
   const serviceAreas = [
     {
       title: "Cities & Towns",
-      icon: <Building2 className="w-6 h-6 text-gray-700" />,
+      icon: <Building2 className="h-6 w-6 text-gray-700" />,
       locations: [
         "Orlando, FL",
         "Lake Buena Vista, FL",
@@ -17,41 +17,65 @@ export default function PlacesWeServeSection() {
     },
     {
       title: "Counties & Regions",
-      icon: <BookOpen className="w-6 h-6 text-gray-700" />,
-      locations: ["Orange County", "Osceola County", "Seminole County", "Lake County"],
+      icon: <BookOpen className="h-6 w-6 text-gray-700" />,
+      locations: [
+        "Orange County",
+        "Osceola County",
+        "Seminole County",
+        "Lake County",
+      ],
     },
     {
       title: "General Region",
-      icon: <Globe className="w-6 h-6 text-gray-700" />,
-      locations: ["Central Florida", "Greater Orlando Area", "The Villages", "Disney World Resort Area"],
+      icon: <Globe className="h-6 w-6 text-gray-700" />,
+      locations: [
+        "Central Florida",
+        "Greater Orlando Area",
+        "The Villages",
+        "Disney World Resort Area",
+      ],
     },
-  ]
+  ];
 
   return (
-    <section className="py-16 bg-blue-900 text-white">
+    <section className="bg-blue-900 py-16 text-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <p className="text-blue-300 font-medium mb-4">Our values</p>
-          <h2 className="text-4xl font-bold mb-12">Places We Serve</h2>
+        <div className="mb-12 text-center">
+          <p className="mb-4 font-medium text-blue-300">Our values</p>
+          <h2 className="mb-12 text-4xl font-bold">Places We Serve</h2>
         </div>
 
         <div className="mb-12">
-          <div className="rounded-2xl overflow-hidden shadow-2xl w-[90%] m-auto">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193597.01650138895!2d-74.14431164802966!3d40.697024322354686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1750886040859!5m2!1sen!2sus" width="100%" height="400" style={{"border":"0px"}} loading="lazy" ></iframe>
+          <div className="m-auto w-[90%] overflow-hidden rounded-2xl shadow-2xl">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224070.0067877835!2d-81.52676764843176!3d28.48108377703785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e773ccf6097d65%3A0x90ea3b67e734c4e4!2sOrlando%2C%20FL!5e0!3m2!1sen!2sus!4v1695476889000!5m2!1sen!2sus"
+              width="100%"
+              height="400"
+              style={{ border: "0px" }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
           {serviceAreas.map((area, index) => (
-            <div key={index} className="bg-white text-gray-800 p-8 rounded-2xl shadow-lg">
-              <div className="flex items-center mb-6">
+            <div
+              key={index}
+              className="rounded-2xl bg-white p-8 text-gray-800 shadow-lg"
+            >
+              <div className="mb-6 flex items-center">
                 {area.icon}
-                <h3 className="text-xl font-bold ml-3">{area.title}</h3>
+                <h3 className="ml-3 text-xl font-bold">{area.title}</h3>
               </div>
               <ul className="space-y-3">
                 {area.locations.map((location, locationIndex) => (
-                  <li key={locationIndex} className="text-gray-600 flex items-center">
-                    <span className="w-2 h-2 bg-gray-400 rounded-full mr-3"></span>
+                  <li
+                    key={locationIndex}
+                    className="flex items-center text-gray-600"
+                  >
+                    <span className="mr-3 h-2 w-2 rounded-full bg-gray-400"></span>
                     {location}
                   </li>
                 ))}
@@ -61,5 +85,5 @@ export default function PlacesWeServeSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
